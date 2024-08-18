@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/MainColorGreen"
+    tools:context=".ActivityCus.HopDongThueXeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/toolbar"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="20dp"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="30dp"
+                        android:paddingLeft="30dp"
+                        android:src="@drawable/logopj" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:background="@color/white"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:text="Hợp đồng thuê xe"/>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/radius2goc">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="italic"
+                                android:textSize="13dp"
+                                android:textColor="@color/black"
+                                android:layout_marginBottom="5dp"
+                                android:text="- Căn cứ Bộ Luật Dân sự 2015;"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="italic"
+                                android:textSize="13dp"
+                                android:textColor="@color/black"
+
+                                android:layout_marginBottom="5dp"
+                                android:text="- Căn cứ Luật thương mại 2005;"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="italic"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="13dp"
+                                android:textColor="@color/black"
+
+                                android:text="- Căn cứ vào nhu cầu và khả năng cung ứng của các bên dưới đây."/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="italic"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="13dp"
+                                    android:textColor="@color/black"
+
+                                    android:layout_marginRight="5dp"
+                                    android:text="Hôm này,"/>
+
+                                <TextView
+                                    android:id="@+id/tv_NgayHienTai1_HopDongThueXe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="italic|bold"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="13dp"
+                                    android:textColor="@color/black"
+
+                                    android:text="07/10/2023"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="italic"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="5dp"
+                                    android:text=","/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="italic"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="13dp"
+                                    android:textColor="@color/black"
+
+                                    android:text="chúng tôi gồm:"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="14dp"
+                                android:textColor="@color/black"
+                                android:text="BÊN CHO THUÊ (sau đây gọi là bên A)"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:textColor="@color/black"
+
+                                    android:layout_marginRight="2dp"
+                                    android:text="ông/bà:"/>
+
+                                <TextView
+                                    android:id="@+id/tv_TenUser_HopDongThueXe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:text="Nguyễn Mạnh Hiếu"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:textColor="@color/black"
+
+                                    android:layout_marginRight="2dp"
+                                    android:text="CMND/CCCD/Hộ chiếu số:"/>
+
+                                <TextView
+                                    android:id="@+id/tv_CCCD_HopDongThueXe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:text="1456789"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="14dp"
+                                android:text="BÊN THUÊ (sau đây gọi là bên B)"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="14dp"
+                                android:textColor="@color/black"
+                                android:text="CÔNG TY MIOTO ASIA"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="13dp"
+                                android:textColor="@color/black"
+                                android:text="Giấy chứng nhận đăng ký doanh nghiệp số: 	0317307544, do Sở Kế hoạch và Đầu tư cấp 2022-05-24.\n\nĐịa chỉ trụ sở chính: 	Văn phòng 02, Tầng 08, Tòa nhà Pearl Plaza, Số 561A Điện Biên Phủ, Phường 25, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam\n\nĐại diện bởi ông/bà: NGUYỄN QUANG SƠN, Số điện thoại: 028 6286 1989\n\nQuản lý bởi Chi cục Thuế Quận Bình Thạnh\n\nHai bên đã thỏa thuận và thống nhất ký kết Hợp đồng thuê xe ôtô với những điều khoản cụ thể như sau:
+"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="14dp"
+                                android:textColor="@color/black"
+                                android:text="Điều 1. Đặc điểm và thỏa thuận thuê xe"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="14dp"
+                                android:textColor="@color/black"
+                                android:text="Bằng hợp đồng này, Bên A đồng ý cho Bên B thuê và bên B đồng ý thuê xe ô tô có đặc điểm sau đây:"/>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:layout_marginRight="2dp"
+                                    android:text="Tên xe:"/>
+
+                                <TextView
+                                    android:id="@+id/tv_TenXe_HopDongThueXe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:text="HONDA 2022"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:layout_marginRight="2dp"
+                                    android:text="Loại xe:"/>
+
+                                <TextView
+                                    android:id="@+id/tv_LoaiXe_HopDongThueXe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:text="HONDA"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:layout_marginRight="2dp"
+                                    android:text="Truyền động:"/>
+
+                                <TextView
+                                    android:id="@+id/tv_TruyenDong_HopDongThueXe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:text="Số tự động"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:layout_marginRight="2dp"
+                                    android:text="Số chỗ ngồi:"/>
+
+                                <TextView
+                                    android:id="@+id/tv_SoGhe_HopDongThueXe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:text="4 chỗ"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:layout_marginRight="2dp"
+                                    android:text="Xe ô tô có biển số:"/>
+
+                                <TextView
+                                    android:id="@+id/tv_BienSoXe_HopDongThueXe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:text="25kkk"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="14dp"
+                                android:layout_marginRight="2dp"
+                                android:text="- Bên A cam đoan trước khi ký bản Hợp đồng này, xe ô tô nêu trên:\n+ Không có tranh chấp về quyền sở hữu/sử dụng;\n+ Không bị ràng buộc bởi bất kỳ Hợp đồng thuê xe ô tô nào đang có hiệu lực.
+"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="14dp"
+                                android:textColor="@color/black"
+                                android:text="Điều 2. Thời hạn thuê xe ô tô"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:layout_marginRight="2dp"
+                                    android:textColor="@color/black"
+                                    android:text="Địa điểm giao xe:"/>
+
+                                <TextView
+                                    android:id="@+id/tv_DiaDiemGiaoXe_HopDongThueXe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginRight="2dp"
+                                    android:textColor="@color/black"
+                                    android:text="Guận 6"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:layout_marginRight="2dp"
+                                    android:textColor="@color/black"
+                                    android:text="Địa điểm trả xe:"/>
+
+                                <TextView
+                                    android:id="@+id/tv_DiaDiemTraXe_HopDongThueXe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginRight="2dp"
+                                    android:textColor="@color/black"
+                                    android:text="Guận 10"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:layout_marginRight="2dp"
+                                    android:textColor="@color/black"
+                                    android:text="Ngày giờ nhận:"/>
+
+                                <TextView
+                                    android:id="@+id/tv_NgayNhanXe_HopDongThueXe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginRight="2dp"
+                                    android:textColor="@color/black"
+                                    android:text="08/10/2023"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginRight="2dp"
+                                    android:textColor="@color/black"
+                                    android:text="-"/>
+
+                                <TextView
+                                    android:id="@+id/tv_GioNhanXe_HopDongThueXe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginRight="2dp"
+                                    android:textColor="@color/black"
+                                    android:text="12h00 AM"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:layout_marginRight="2dp"
+                                    android:textColor="@color/black"
+                                    android:text="Ngày giờ trả:"/>
+
+                                <TextView
+                                    android:id="@+id/tv_NgayTraXe_HopDongThueXe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginRight="2dp"
+                                    android:textColor="@color/black"
+                                    android:text="10/10/2023"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginRight="2dp"
+                                    android:textColor="@color/black"
+                                    android:text="-"/>
+
+                                <TextView
+                                    android:id="@+id/tv_GioTraXe_HopDongThueXe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginRight="2dp"
+                                    android:textColor="@color/black"
+                                    android:text="12h00 AM"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:layout_marginRight="2dp"
+                                    android:textColor="@color/black"
+                                    android:text="Thời hạn thuê là:"/>
+
+                                <TextView
+                                    android:id="@+id/tv_TongSoNgayThue_HopDongThueXe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginRight="2dp"
+                                    android:textColor="@color/black"
+                                    android:text="5"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:text="ngày"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="14dp"
+                                android:textColor="@color/black"
+                                android:text="Điều 3. Mục đích thuê"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="14dp"
+                                android:textColor="@color/black"
+                                android:text="Bên B sử dụng tài sản thuê nêu trên vào mục đích du lịch"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="14dp"
+                                android:textColor="@color/black"
+                                android:text="Điều 4: Giá thuê và phương thức thanh toán"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14dp"
+                                    android:layout_marginRight="2dp"
+                                    android:textColor="@color/black"
+                                    android:text="1. Giá thuê tài sản nêu trên là:"/>
+
+                                <TextView
+                                    android:id="@+id/tv_SoTienThue_HopDongThueXe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textSize="14dp"
+                                    android:textColor="@color/black"
+                                    android:text="800.000"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:textStyle="bold"
+                                    android:textSize="14dp"
+                                    android:textColor="@color/black"
+                                    android:layout_marginRight="2dp"
+                                    android:text="VNĐ/NGÀY"/>
+
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:textColor="@color/black"
+                                android:text="trả bằng tiền Việt Nam hiện hành."/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14dp"
+                                    android:textColor="@color/black"
+                                    android:text="2. Phương thức thanh toán: Thanh toán bằng online qua ứng dụng MoMo và Bên B phải thanh toán cho Bên A số tiền thuê xe ô tô nêu trên vào ngày"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_NgayHienTai2_HopDongThueXe"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:text="08/10/2023"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:textColor="@color/black"
+                                android:text="3. Việc giao và nhận số tiền nêu trên do hai bên tự thực hiện và chịu trách nhiệm trước pháp luật."/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="14dp"
+                                android:textColor="@color/black"
+                                android:text="Điều 5: Phương thức giao, trả lại tài sản thuê"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="14dp"
+                                android:textColor="@color/black"
+                                android:text="Hết thời hạn thuê nêu trên, Bên B phải giao trả chiếc xe ô tô trên cho Bên A."/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="14dp"
+                                android:textColor="@color/black"
+                                android:text="Điều 6: Nghĩa vụ và quyền của Bên A"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="14dp"
+                                android:textColor="@color/black"
+                                android:text="1. Bên A có các nghĩa vụ sau đây:\na) Chuyển giao tài sản cho thuê đúng thỏa thuận ghi trong Hợp đồng;\nb) Bảo đảm giá trị sử dụng của tài sản cho thuê;\nc) Bảo đảm quyền sử dụng tài sản cho Bên B;\n\n2. Bên A có quyền sau đây:\na) Nhận đủ tiền thuê tài sản theo phương thức đã thỏa thuận;\nb) Nhận lại tài sản thuê khi hết hạn Hợp đồng;\nc) Đơn phương đình chỉ thực hiện Hợp đồng và yêu cầu bồi thường thiệt hại nếu Bên B có một trong các hành vi sau đây:\n- Không trả tiền thuê trong 2 tháng liên tiếp;\n- Sử dụng tài sản thuê không đúng công dụng; mục đích của tài sản;\n- Làm tài sản thuê mất mát, hư hỏng;\n- Sửa chữa, đổi hoặc cho người khác thuê lại mà không có sự đồng ý của Bên A;"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="14dp"
+                                android:textColor="@color/black"
+                                android:text="Điều 7: Nghĩa vụ và quyền của Bên B"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="14dp"
+                                android:textColor="@color/black"
+                                android:text="1. Bên B có các nghĩa vụ sau đây:\na) Bảo quản tài sản thuê như tài sản của chính mình, không được thay đổi tình trạng tài sản, kông được cho thuê lại tài sản nếu không có sự đồng ý của Bên A;\nb) Sử dụng tài sản thuê đúng công dụng, mục đích của tài sản;\nc) Trả đủ tiền thuê tài sản theo phương thức đã thỏa thuận;\nd) Trả lại tài sản thuê đúng thời hạn và phương thức đã thỏa thuận;\ne) Chịu toàn bộ chi phí liên quan đến chiếc xe trong quá trình thuê. Trong quá trình thuê xe mà Bên B gây ra tai nạn, hỏng hóc xe thì Bên B phải có trách nhiệm thông báo ngay cho Bên A và chịu trách nhiệm sửa chữa, phục hồi nguyên trạng xe cho Bên A.\n\n2. Bên B có các quyền sau đây:\na) Nhận tài sản thuê theo đúng thỏa thuận;\nb) Được sử dụng tài sản thuê theo đúng công dụng, mục đích của tài sản;\nc) Đơn phương đình chỉ thực hiện Hợp đồng thuê tài sản và yêu cầu bồi thường thiệt hại nếu:\n- Bên A chậm giao tài sản theo thỏa thuận gây thiệt hại cho Bên B;\n- Bên A giao tài sản thuê không đúng đắc điểm, tình trạng như mô tả tại Điều 1 Hợp đồng;"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="14dp"
+                                android:textColor="@color/black"
+                                android:text="Điều 8: Cam đoan của các bên"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="14dp"
+                                android:textColor="@color/black"
+                                android:text="Bên A và Bên B chịu trách nhiệm trước pháp luật về những lời cam đoan sau đây:\n\n
+1. Bên A cam đoan:\n- Những thông tin về nhân thân, về chiếc xe ô tô nêu trên này là hoàn toàn đúng sự thật;\n\n- Không bỏ sót thành viên nào cùng có quyền sở hữu xe ô tô nêu trên để ký Hợp đồng này; Nếu có bất kỳ một khiếu kiện nào của thành viên cùng có quyền sở hữu xe ô tô trên bị bỏ sót thì Bên A ký tên/điểm chỉ trong Hợp đồng này xin hoàn toàn chịu trách nhiệm trước pháp luật, kể cả việc phải mang tài sản chung, riêng của mình để đảm bảo cho trách nhiệm đó;\n\n- Xe ô tô nêu trên hiện tại thuộc quyền sở hữu, sử dụng hợp pháp của Bên A, không có tranh chấp, không bị ràng buộc dưới bất cứ hình thức nào bởi các giao dịch đang tồn tại như: Cầm cố, thế chấp, bảo lãnh, mua bán, trao đổi, tặng cho, cho thuê, cho mượn, góp vốn vào doanh nghiệp hay bất kỳ một quyết định nào của cơ quan nhà nước có thẩm quyền nhằm hạn chế quyền định đoạt của Bên A;\n\n- Việc giao kết Hợp đồng này là hoàn toàn tự nguyện, dứt khoát, không bị lừa dối hoặc ép buộc;\n\n- Thực hiện đúng và đầy đủ tất cả các thỏa thuận đã ghi trong bản Hợp đồng này;\n\n2. Bên B cam đoan:\na. Những thông tin pháp nhân, nhân thân đã ghi trong Hợp đồng này là đúng sự thật;\nb. Đã xem xét kỹ, biết rõ về tài sản thuê;\nc. Việc giao kết Hợp đồng này hoàn toàn tự nguyện, không bị lừa dối hoặc ép buộc;\nd. Thực hiện đúng và đầy đủ tất cả các thoả thuận đã ghi trong Hợp đồng này;\n\n3. Hai bên cam đoan:\n- Các bên cam kết mọi giấy tờ về nhân thân và tài sản đều là giấy tờ thật, cấp đúng thẩm quyền, còn nguyên giá trị pháp lý và không bị tẩy xóa, sửa chữa. Nếu sai các bên hoàn toàn chịu trách nhiệm trước pháp luật kể cả việc mang tài sản chung, riêng để đảm bảo cho lời cam đoan trên.\n\n- Nếu có thắc mắc, khiếu nại, khiếu kiện dẫn đến Hợp đồng vô hiệu (kể cả vô hiệu một phần) thì các bên tự chịu trách nhiệm trước pháp luật.\n\n- Tại thời điểm ký kết, các bên hoàn toàn minh mẫn, sáng suốt, có đầy đủ năng lực hành vi dân sự, cam đoan đã biết rõ về nhân thân và thông tin về những người có tên trong Hợp đồng này."/>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:textSize="14dp"
+                                    android:textColor="@color/black"
+                                    android:layout_marginRight="2dp"
+                                    android:text="Hợp đồng được lập thành"/>
+
+                                <TextView
+                                    android:id="@+id/tv_NgayHienTai3_HopDongThueXe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:text="08/10/2023"/>
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="14dp"
+                                android:textColor="@color/black"
+                                android:text="bản có giá trị pháp lý như nhau, mỗi bên giữ 1 bản làm bằng chứng."/>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="14dp"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/black"
+                                        android:text="ĐẠI DIỆN BÊN A"/>
+
+                                    <TextView
+                                        android:id="@+id/tv_KyTenUser_HopDongThueXe"
+                                        android:layout_width="150dp"
+                                        android:layout_height="50dp"
+                                        android:gravity="center"
+                                        android:textSize="14dp"
+                                        android:textStyle="italic"
+                                        android:textColor="@color/black"
+                                        android:text="Nguyễn Mạnh Hiếu"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:textSize="14dp"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/black"
+                                        android:text="ĐẠI DIỆN BÊN B"/>
+
+                                    <TextView
+                                        android:layout_width="150dp"
+                                        android:layout_height="50dp"
+                                        android:textSize="14dp"
+                                        android:gravity="center"
+                                        android:textStyle="italic"
+                                        android:textColor="@color/black"
+                                        android:text="MIOTO ASIA JOINT STOCK COMPANY"/>
+
+
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <CheckBox
+                                android:id="@+id/chkXacNhanHopDong_HopDongThueXe"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+
+                                android:text="Xác nhận hợp đồng" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    </ScrollView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnTiepTuc_HopDongThueXe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnThanhToan_HopDongThueXe_onclick"
+            android:backgroundTint="@color/MainColorGreen"
+            android:text="Tiếp tục" />
+    </LinearLayout>
+
+
+</FrameLayout>

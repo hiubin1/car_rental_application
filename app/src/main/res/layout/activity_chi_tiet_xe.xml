@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".ActivityCus.ChiTietXeActivity"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://schemas.android.com/apk/res-auto
+http://schemas.android.com/apk/res-auto
+http://schemas.android.com/apk/res-auto ">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    app:cardElevation="5dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_HinhXe_ChiTietXe"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/carmorrisgarages" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="5dp"
+                    app:cardElevation="5dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_TenXe_ChiTietXe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:textSize="15dp"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:drawablePadding="5dp"
+                            android:text="MORRIS GARAGES MG5 STANDARD 2022"
+                            android:drawableRight="@drawable/check20" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="5dp"
+
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:textSize="13dp"
+                                android:layout_weight="1"
+                                android:drawableLeft="@drawable/money20"
+                                android:textColor="@color/black"
+                                android:gravity="center|left"
+                                android:layout_marginLeft="5dp"
+                                android:textStyle="bold"
+                                android:drawablePadding="5dp"
+                                android:text="Giá tiền thuê:" />
+
+                            <TextView
+                                android:id="@+id/tv_GiaTien_ChiTietXe"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:textSize="13dp"
+                                android:textColor="@color/MainColorGreen"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="5dp"
+                                android:drawablePadding="5dp"
+                                android:text="800000"
+                                tools:ignore="InvalidId" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:textSize="13dp"
+                                android:gravity="right"
+                                android:textColor="@color/MainColorGreen"
+                                android:drawablePadding="5dp"
+                                android:textStyle="bold"
+                                android:text="VNĐ"
+                                tools:ignore="InvalidId" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:textSize="13dp"
+                                android:gravity="right"
+                                android:textColor="@color/black"
+                                android:drawablePadding="5dp"
+                                android:text="/ngày"
+                                tools:ignore="InvalidId" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:textSize="13dp"
+                                android:layout_weight="1"
+                                android:textColor="@color/black"
+                                android:gravity="center|left"
+                                android:drawableLeft="@drawable/car20"
+                                android:layout_marginLeft="5dp"
+                                android:textStyle="bold"
+
+                                android:drawablePadding="5dp"
+                                android:text="Loại xe:" />
+
+                            <TextView
+                                android:id="@+id/tv_Loaixe_ChiTietXe"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:textSize="13dp"
+                                android:textColor="@color/black"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:drawablePadding="5dp"
+                                android:text="MORRIS GARAGES"
+                                tools:ignore="InvalidId" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:textSize="13dp"
+                                android:textColor="@color/black"
+                                android:layout_weight="1"
+                                android:drawableLeft="@drawable/location20"
+                                android:layout_marginLeft="5dp"
+                                android:drawablePadding="5dp"
+                                android:textStyle="bold"
+                                android:text="Địa điểm nhận xe:" />
+
+                            <TextView
+                                android:id="@+id/tv_DiaDiemGiaoXe_ChiTietXe"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:gravity="right"
+                                android:textSize="13dp"
+                                android:textColor="@color/black"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:drawablePadding="5dp"
+                                android:text="Quận 10" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:textSize="13dp"
+                                android:textColor="@color/black"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="5dp"
+                                android:drawablePadding="5dp"
+                                android:drawableLeft="@drawable/biensoxe20"
+                                android:textStyle="bold"
+                                android:text="Biển số xe:" />
+
+                            <TextView
+                                android:id="@+id/tv_BienSoXe_ChiTietXe"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:textSize="13dp"
+                                android:gravity="center"
+                                android:textColor="@color/black"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:drawablePadding="5dp"
+                                android:text="25kkk" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center|left"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:textSize="13dp"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="5dp"
+                                android:drawablePadding="5dp"
+                                android:layout_weight="1"
+                                android:drawableLeft="@drawable/status20"
+                                android:textStyle="bold"
+                                android:text="Trạng thái:" />
+
+                            <TextView
+                                android:id="@+id/tv_TrangThai_ChiTietXe"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:textSize="13dp"
+                                android:gravity="center"
+                                android:textColor="@color/black"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:drawablePadding="5dp"
+                                android:text="Còn xe" />
+
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            app:cardElevation="0dp"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Xe hỗ trợ bảo hiểm chuyến bởi MIC"
+                                    android:layout_marginBottom="5dp"
+                                    android:textStyle="bold"
+                                    android:drawablePadding="5dp"
+                                    android:textSize="13dp"
+                                    android:textColor="@color/MainColorGreen"
+                                    android:drawableLeft="@drawable/check20" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:textSize="12dp"
+                                    android:text="Vững tay lái với gói bảo hiểm vật chất xe ô tô dành riêng cho các chuyến đi trên MIOTO" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    app:cardElevation="10dp"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            app:cardElevation="0dp"
+                            android:layout_marginBottom="10dp"
+                            app:cardBackgroundColor="@color/MainColorGreen"
+                            app:cardCornerRadius="10dp"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:padding="5dp"
+                                android:textColor="@color/white"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textSize="13dp"
+                                android:layout_height="wrap_content"
+                                android:text="Đặc điểm">
+
+                            </TextView>
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/transmission30" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textSize="12dp"
+                                    android:text="Truyền động" />
+
+                                <TextView
+                                    android:id="@+id/tv_TruyenDong_ChiTietXe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:textSize="13dp"
+                                    android:text="Số tự động" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/seat30" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textSize="12dp"
+                                    android:text="Số ghế" />
+
+                                <TextView
+                                    android:id="@+id/tv_SoGhe_ChiTietXe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="4 chỗ"
+                                    android:textColor="@color/black"
+                                    android:textSize="13dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/fuel30" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textSize="12dp"
+                                    android:text="Nhiên liệu" />
+
+                                <TextView
+                                    android:id="@+id/tv_NhienLieu_ChiTietXe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:textSize="13dp"
+                                    android:text="Xăng" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/engine30" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textSize="12dp"
+                                    android:text="Tiêu hao" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tv_NangLuongTieuHao_ChiTietXe"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp"
+                                        android:text="7 lít" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/black"
+                                        android:textSize="13dp"
+                                        android:text="/100km" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+
+                            app:cardElevation="0dp"
+                            android:layout_marginBottom="10dp"
+                            app:cardBackgroundColor="@color/MainColorGreen"
+                            app:cardCornerRadius="10dp"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:textSize="13dp"
+                                android:textColor="@color/white"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Các tiện nghi trên xe" />
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|top"
+                            android:gravity="center|top"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/map" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:textSize="13dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="Bản đồ" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/camerafront25" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:textSize="13dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="Camera hành trình" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/cambienlop25" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:textSize="13dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="Cảm biến lốp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/gps25" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:textSize="13dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="Định vị GPS" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/lopduphong25" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:textSize="13dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="Lốp dự phòng" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/tuikhi25" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:textSize="13dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="Túi khí an toàn" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/bluetooth25" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:textSize="13dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="Bluetooth" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/cameralui25" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:textSize="13dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="Camera lùi" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/canhbao25" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:textSize="13dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="Cảnh báo tốc độ" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/usb25" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:textSize="13dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="Khe cắm USB" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/etc25" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:textSize="13dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="ETC" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+
+                            app:cardElevation="0dp"
+                            android:layout_marginBottom="10dp"
+                            app:cardBackgroundColor="@color/MainColorGreen"
+                            app:cardCornerRadius="10dp"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:textSize="13dp"
+                                android:textColor="@color/white"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Giấy tờ thuê xê" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/cardid25"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:textSize="13dp"
+                            android:drawablePadding="5dp"
+                            android:text="GPLX &amp; CCCD gắn chip (đối chiếu)" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:padding="5dp"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+
+                            app:cardElevation="0dp"
+                            android:layout_marginBottom="10dp"
+                            app:cardBackgroundColor="@color/MainColorGreen"
+                            app:cardCornerRadius="10dp"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:textSize="13dp"
+                                android:textColor="@color/white"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Điều khoản" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13dp"
+                            android:gravity="center|left"
+                            android:drawablePadding="5dp"
+                            android:text="@string/DieuKhoan" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnChonThueXe_ChiTietXe_onclick"
+            android:backgroundTint="@color/MainColorGreen"
+            android:text="Chọn thuê" />
+    </LinearLayout>
+</FrameLayout>

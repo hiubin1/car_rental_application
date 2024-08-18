@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_Avatar_QuanLyNguoiDung"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/avatar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Họ và tên:"
+                        android:textStyle="bold"
+                        android:layout_marginRight="5dp"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tv_Ten_QuanLyNguoiDung"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cao Võ Nhựt Quan"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Số điện thoại:"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_SDT_QuanLyNguoiDung"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="14dp"
+                        android:text="0123456789" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CCCD:"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_CMND_QuanLyNguoiDung"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="5dp"
+                        android:textSize="14dp"
+                        android:text="012345678912" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

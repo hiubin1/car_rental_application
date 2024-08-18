@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MIOTO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open_nav">Open Navigation</string>
+    <string name="close_nav">Close Navigation</string>
+
+
+    <string name="Home">Trang chủ</string>
+    <string name="Car">Loại xe</string>
+    <string name="Noice">Thông báo</string>
+    <string name="Profile">Cá nhân</string>
+
+    <string name="DieuKhoan">Quy định khác:\n
+◦ Sử dụng xe đúng mục đích.\n
+◦ Không sử dụng xe thuê vào mục đích phi pháp, trái pháp luật.\n
+◦ Không sử dụng xe thuê để cầm cố, thế chấp.\n
+◦ Không hút thuốc, nhả kẹo cao su, xả rác trong xe.\n
+◦ Không chở hàng quốc cấm dễ cháy nổ.\n
+◦ Không chở hoa quả, thực phẩm nặng mùi trong xe.\n\n
+Trân trọng cảm ơn, chúc quý khách hàng có những chuyến đi tuyệt vời !</string>
+</resources>

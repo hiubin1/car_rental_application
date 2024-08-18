@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="176dp"
+    android:gravity="bottom"
+    android:padding="16dp"
+    android:background="@color/MainColorGreen"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/avatar" />
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <TextView
+        android:id="@+id/tv_TenAdmin_Admin"
+        android:layout_width="match_parent"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Admin" />
+
+    <TextView
+        android:id="@+id/tv_SdtAdmin_Admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="123456789" />
+</LinearLayout>

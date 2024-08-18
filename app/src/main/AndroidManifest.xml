@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PJThueXeApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".ActivityAdmin.ChiTietHoaDonDatXeAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityCus.GiaHanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityCus.ChiTietHoaDonDatXeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityCus.DatTruocXeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityAdmin.ChinhSuaSoDatXeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityCus.LichSuDatXeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityCus.ChiTietHopDongCusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityCus.HopDongCusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityAdmin.ChiTietHopDongActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityCus.ThongTinCaNhanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityCus.HopDongThueXeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityCus.ChonLichThueXeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityCus.ChiTietXeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityAdmin.ThemXeAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityCus.DangKyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityCus.CustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityAdmin.ChinhSuaXeAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityAdmin.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityCus.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityCus.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

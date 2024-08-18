@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_QuanLyXe"
+            android:icon="@drawable/car40"
+            android:title="Quản lý xe"/>
+
+        <item
+            android:id="@+id/nav_QuanLyHopDong"
+            android:icon="@drawable/contract40"
+            android:title="Quản lý hợp đồng"/>
+
+        <item
+            android:id="@+id/nav_QuanLyNguoiDung"
+            android:icon="@drawable/cus40"
+            android:title="Quản lý người dùng"/>
+
+
+
+        <item
+            android:id="@+id/nav_QuanLyHoaDonDatXe"
+            android:icon="@drawable/bill40"
+            android:title="Quản lý hóa đơn đặt xe"/>
+
+    </group>
+
+    <item
+        android:title=""/>
+
+    <item
+        android:id="@+id/nav_LogOut"
+        android:icon="@drawable/logout40"
+        android:title="Đăng xuất"
+        />
+
+</menu>

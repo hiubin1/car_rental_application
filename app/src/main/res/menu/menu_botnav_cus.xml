@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home64"
+        android:title="@string/Home"/>
+
+    <item
+        android:id="@+id/nav_car"
+        android:icon="@drawable/car64"
+        android:title="@string/Car"/>
+
+    <item
+        android:id="@+id/nav_noice"
+        android:icon="@drawable/bell64"
+        android:title="@string/Noice"/>
+
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/profile64"
+        android:title="@string/Profile"/>
+</menu>

@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ActivityAdmin.ChinhSuaXeAdminActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="70dp">
+
+        <include
+            layout="@layout/toolbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/custom_dash"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+
+                    <Button
+                        android:id="@+id/btnChonAnhXe_ChinhSuaXeAdmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:onClick="btnChonAnhXe_ChinhSuaXeAdmin"
+                        android:backgroundTint="@color/MainColorGreen"
+                        android:gravity="center"
+                        android:text="Chọn ảnh xe" />
+
+                    <ImageView
+                        android:id="@+id/imgAnhXe_ChinhXeAdmin"
+                        android:layout_width="200dp"
+                        android:layout_gravity="center"
+                        android:layout_height="200dp"
+                        android:src="@drawable/image100" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:text="Loại xe:"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_bgspinner"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/tv_LoaiXe_ChinhSuaXeAdmin"
+                            android:layout_width="260dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="46dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spn_LoaiXe_ChinhSuaXeAdmin"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="match_parent"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:text="Tên xe:"/>
+
+                    <EditText
+                        android:id="@+id/edt_TenXe_ChinhSuaXeAdmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_edt"
+                        android:layout_marginTop="5dp"
+                        android:inputType="text"
+                        android:textSize="16dp"
+                        android:paddingLeft="10dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:text="Biển số xe:"/>
+
+                    <EditText
+                        android:id="@+id/edt_BienSoXe_ChinhSuaXeAdmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_edt"
+                        android:layout_marginTop="5dp"
+                        android:inputType="text"
+                        android:textSize="16dp"
+                        android:paddingLeft="10dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:text="Địa điểm nhận xe:"/>
+
+                    <EditText
+                        android:id="@+id/edt_DiaDiemNhanXe_ChinhSuaXeAdmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_edt"
+                        android:layout_marginTop="5dp"
+                        android:inputType="text"
+                        android:textSize="16dp"
+                        android:paddingLeft="10dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:text="Số ghế:"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_bgspinner"
+                        android:orientation="horizontal">
+
+
+
+                        <TextView
+                            android:id="@+id/tv_SoGhe_ChinhSuaXeAdmin"
+                            android:layout_width="260dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="46dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spn_SoGhe_ChinhSuaXeAdmin"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="match_parent"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:text="Truyền động:"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_bgspinner"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/tv_TruyenDong_ChinhSuaXeAdmin"
+                            android:layout_width="260dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="46dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spn_TruyenDong_ChinhSuaXeAdmin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:text="Nhiên liệu:"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_bgspinner"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/tv_NhienLieu_ChinhSuaXeAdmin"
+                            android:layout_width="260dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="46dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spn_NhienLieu_ChinhSuaXeAdmin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:text="Năng lượng tiêu hao:"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_bgspinner"
+                        android:orientation="horizontal">
+
+
+
+                        <TextView
+                            android:id="@+id/tv_NangLuongTieuHao_ChinhSuaXeAdmin"
+                            android:layout_width="260dp"
+                            android:gravity="center_vertical"
+                            android:layout_height="46dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spn_NangLuongTieuHao_ChinhSuaXeAdmin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:text="Giá tiền thuê:"/>
+
+                    <EditText
+
+                        android:id="@+id/edt_GiaTien_ChinhSuaXeAdmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_edt"
+                        android:layout_marginTop="5dp"
+                        android:inputType="number"
+                        android:textSize="16dp"
+                        android:paddingLeft="10dp" />
+
+                </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:textSize="13dp"
+                                    android:text="Trạng thái:"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/custom_bgspinner"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tv_Trangthai_ChinhSuaXeAdmin"
+                                        android:layout_width="260dp"
+                                        android:layout_height="46dp"
+                                        android:textSize="16dp"
+                                        android:paddingLeft="10dp"
+                                        />
+
+                                    <Spinner
+                                        android:id="@+id/spn_Trangthai_ChinhSuaXeAdmin"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:textColor="@color/black" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btnChinhSuaXe_ChinhSuaXeAdmin"
+            android:backgroundTint="@color/MainColorGreen"
+            android:layout_margin="10dp"
+            android:text="Chỉnh sửa" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/MainColorGreen"
+            android:onClick="btnXoaXe_ChinhSuaXeAdmin"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Xóa xe" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        app:cardCornerRadius="16dp"
+        android:layout_gravity="center"
+        app:cardElevation="7dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:background="@drawable/bg_white"
+            android:orientation="vertical"
+
+            android:layout_gravity="center|top"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="Hóa đơn"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_dash"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:text="Mã đơn:"/>
+
+                    <TextView
+                        android:id="@+id/tv_MaDon_LichSuDatXe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:gravity="right"
+                        android:text="11"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:text="Ngày đặt đơn:"/>
+
+                    <TextView
+                        android:id="@+id/tv_NgayHienTai_LichSuDatXe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:gravity="right"
+                        android:text="12/03/2023"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:text="Họ và tên:"/>
+
+                    <TextView
+                        android:id="@+id/tv_TenUser_LichSuDatXe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:gravity="right"
+                        android:text="híu"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:text="Số điện thoại:"/>
+
+                    <TextView
+                        android:id="@+id/tv_SDTcus_LichSuDatXe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:gravity="right"
+                        android:text="123"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:text="CMND:"/>
+
+                    <TextView
+                        android:id="@+id/tv_CMND_LichSuDatXe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:gravity="right"
+                        android:text="123456"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:text="Tên xe:"/>
+
+                    <TextView
+                        android:id="@+id/tv_TenXe_LichSuDatXe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:gravity="right"
+                        android:text="bbbb"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:text="Biển số xe:"/>
+
+                    <TextView
+                        android:id="@+id/tv_BienSoXe_LichSuDatXe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:gravity="right"
+                        android:text="dsadsa"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:text="Địa điểm nhận xe:"/>
+
+                    <TextView
+                        android:id="@+id/tv_DiaDiemGiaoXe_LichSuDatXe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:gravity="right"
+                        android:text="Qdsfa"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:text="Địa điểm trả xe:"/>
+
+                    <TextView
+                        android:id="@+id/tv_DiaDiemTraXe_LichSuDatXe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:gravity="right"
+                        android:text="Qdsfa"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:text="Ngày nhận xe:"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/tv_NgayNhanXe_LichSuDatXe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:gravity="right"
+                            android:text="15/10/20"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:textSize="13dp"
+                            android:gravity="right"
+                            android:text="-"/>
+
+                        <TextView
+                            android:id="@+id/tv_GioNhanXe_LichSuDatXe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:gravity="right"
+                            android:text="1..00 AM"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:text="Ngày trả xe:"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_NgayTraXe_LichSuDatXe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:gravity="right"
+                            android:text="16/10/20"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:textSize="13dp"
+                            android:gravity="right"
+                            android:text="-"/>
+
+                        <TextView
+                            android:id="@+id/tv_GioTraXe_LichSuDatXe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:gravity="right"
+                            android:text="12hfdsa AM"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:text="Tổng ngày thuê:"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_TongSoNgayThue_LichSuDatXe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:gravity="right"
+                            android:layout_marginRight="3dp"
+                            android:text="fds"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:gravity="right"
+                            android:text="ngày"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:text="Giá thuê xe:"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_GiaTienThue_LichSuDatXe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:gravity="right"
+                            android:text="500000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:gravity="right"
+                            android:text="VND/ngày"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_dash"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:text="Tổng tiền:"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_TongTien_LichSuDatXe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:gravity="right"
+                            android:text="1000000"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:gravity="right"
+                            android:text="/VND"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
